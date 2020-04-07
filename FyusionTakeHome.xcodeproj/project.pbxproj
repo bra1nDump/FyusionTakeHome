@@ -14,6 +14,7 @@
 		2EBACF6E243C03E200829163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBACF6C243C03E200829163 /* LaunchScreen.storyboard */; };
 		2EBACF79243C03E200829163 /* FyusionTakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBACF78243C03E200829163 /* FyusionTakeHomeTests.swift */; };
 		2EBACF84243C03E200829163 /* FyusionTakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBACF83243C03E200829163 /* FyusionTakeHomeUITests.swift */; };
+		2EBACF92243C069300829163 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBACF91243C069300829163 /* Api.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2EBACF7F243C03E200829163 /* FyusionTakeHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FyusionTakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBACF83243C03E200829163 /* FyusionTakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FyusionTakeHomeUITests.swift; sourceTree = "<group>"; };
 		2EBACF85243C03E200829163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EBACF91243C069300829163 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		2EBACF60243C03DE00829163 /* FyusionTakeHome */ = {
 			isa = PBXGroup;
 			children = (
+				2EBACF91243C069300829163 /* Api.swift */,
 				2EBACF61243C03DE00829163 /* AppDelegate.swift */,
 				2EBACF65243C03DE00829163 /* ContentView.swift */,
 				2EBACF67243C03E200829163 /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EBACF92243C069300829163 /* Api.swift in Sources */,
 				2EBACF62243C03DE00829163 /* AppDelegate.swift in Sources */,
 				2EBACF66243C03DE00829163 /* ContentView.swift in Sources */,
 			);
