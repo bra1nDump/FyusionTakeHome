@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2EBACF62243C03DE00829163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBACF61243C03DE00829163 /* AppDelegate.swift */; };
-		2EBACF66243C03DE00829163 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBACF65243C03DE00829163 /* ContentView.swift */; };
+		2EBACF66243C03DE00829163 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBACF65243C03DE00829163 /* AppView.swift */; };
 		2EBACF68243C03E200829163 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBACF67243C03E200829163 /* Assets.xcassets */; };
 		2EBACF6B243C03E200829163 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBACF6A243C03E200829163 /* Preview Assets.xcassets */; };
 		2EBACF6E243C03E200829163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EBACF6C243C03E200829163 /* LaunchScreen.storyboard */; };
 		2EBACF79243C03E200829163 /* FyusionTakeHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBACF78243C03E200829163 /* FyusionTakeHomeTests.swift */; };
 		2EBACF84243C03E200829163 /* FyusionTakeHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBACF83243C03E200829163 /* FyusionTakeHomeUITests.swift */; };
 		2EBACF92243C069300829163 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBACF91243C069300829163 /* Api.swift */; };
+		2EBACF94243C0FFE00829163 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBACF93243C0FFE00829163 /* RemoteImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		2EBACF5E243C03DE00829163 /* FyusionTakeHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FyusionTakeHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBACF61243C03DE00829163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2EBACF65243C03DE00829163 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2EBACF65243C03DE00829163 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		2EBACF67243C03E200829163 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EBACF6A243C03E200829163 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2EBACF6D243C03E200829163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		2EBACF83243C03E200829163 /* FyusionTakeHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FyusionTakeHomeUITests.swift; sourceTree = "<group>"; };
 		2EBACF85243C03E200829163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EBACF91243C069300829163 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		2EBACF93243C0FFE00829163 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +101,10 @@
 		2EBACF60243C03DE00829163 /* FyusionTakeHome */ = {
 			isa = PBXGroup;
 			children = (
+				2EBACF93243C0FFE00829163 /* RemoteImage.swift */,
 				2EBACF91243C069300829163 /* Api.swift */,
 				2EBACF61243C03DE00829163 /* AppDelegate.swift */,
-				2EBACF65243C03DE00829163 /* ContentView.swift */,
+				2EBACF65243C03DE00829163 /* AppView.swift */,
 				2EBACF67243C03E200829163 /* Assets.xcassets */,
 				2EBACF6C243C03E200829163 /* LaunchScreen.storyboard */,
 				2EBACF6F243C03E200829163 /* Info.plist */,
@@ -269,7 +272,8 @@
 			files = (
 				2EBACF92243C069300829163 /* Api.swift in Sources */,
 				2EBACF62243C03DE00829163 /* AppDelegate.swift in Sources */,
-				2EBACF66243C03DE00829163 /* ContentView.swift in Sources */,
+				2EBACF66243C03DE00829163 /* AppView.swift in Sources */,
+				2EBACF94243C0FFE00829163 /* RemoteImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

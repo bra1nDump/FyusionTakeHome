@@ -7,6 +7,21 @@ struct Fyuse: Codable {
     let thumb: String
     let category: [String]
     let description: String?
+    
+    #if DEBUG
+    static var sample =
+        Fyuse(
+            uid: "inside_trunk",
+            path: "https://i.fyuse.com/group/qkfxcn9nlvee7ip3/jlp75qdubezgc/snaps/img_oDLiEj3QxhWdRwJS.jpg",
+            thumb: "https://i.fyuse.com/group/qkfxcn9nlvee7ip3/jlp75qdubezgc/snaps/img_oDLiEj3QxhWdRwJS_thumb.jpg",
+            category: [ "interior" ],
+            description: nil
+        )
+    #endif
+}
+
+extension Fyuse: Identifiable {
+    var id: String { uid }
 }
 
 fileprivate struct Response: Codable {
@@ -27,6 +42,7 @@ class Api {
             for: URL(string: "https://api.fyu.se/1.4/group/web/jlp75qdubezgc?abspath=1")!)
         .tryMap { try Response.parse($0.0).data.list }
         .replaceError(with: [])
+        .receive(on: DispatchQueue.main)
         .eraseToAnyPublisher()
     }
 }
