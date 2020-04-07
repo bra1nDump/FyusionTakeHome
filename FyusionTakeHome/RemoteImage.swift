@@ -7,9 +7,17 @@ struct RemoteImage: View {
         @Published private var loadedImage: UIImage?
         private var downloadHandle: AnyCancellable?
         
+        private let urlString: String
+        
         init(urlString: String) {
-            guard let url = URL(string: urlString) else { return }
-            downloadHandle =
+            self.urlString = urlString
+        }
+        
+        func load() {
+            // avoid loading on repeated appearance
+            guard loadedImage == nil else { return }
+            guard let url = URL(string: self.urlString) else { return }
+            self.downloadHandle =
                 URLSession.shared
                 .dataTaskPublisher(for: url)
                 .map { result -> Data? in result.0 }
@@ -29,6 +37,7 @@ struct RemoteImage: View {
     var body: some View {
         Image(uiImage: model.image)
         .resizable()
-        .scaledToFill()
+        .scaledToFit()
+        .onAppear(perform: model.load)
     }
 }

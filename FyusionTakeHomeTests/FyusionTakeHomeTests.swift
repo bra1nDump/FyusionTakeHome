@@ -16,5 +16,4 @@ class FyusionTakeHomeTests: XCTestCase {
         wait(for: [expecation], timeout: 1)
         handle.cancel()
     }
-
 }
